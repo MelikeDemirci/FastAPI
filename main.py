@@ -28,6 +28,8 @@ from spellchecker import SpellChecker
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
+nltk.download('all')
+
 # 2. Create the app object
 app = FastAPI()
 svm_model = pickle.load(open("model.sav", 'rb'))
