@@ -28,14 +28,12 @@ from spellchecker import SpellChecker
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
-nltk.download('stopwords')
-nltk.download('wordnet')
-
 # 2. Create the app object
 app = FastAPI()
 svm_model = pickle.load(open("model.sav", 'rb'))
 tfidf = pickle.load(open("tfidf.sav", 'rb'))
-
+nltk.download('stopwords')
+nltk.download('wordnet')
 # 3. Index route, opens automatically on http://127.0.0.1:8000
 @app.get('/')
 def index():
