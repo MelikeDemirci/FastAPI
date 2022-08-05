@@ -29,6 +29,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 # 2. Create the app object
 app = FastAPI()
