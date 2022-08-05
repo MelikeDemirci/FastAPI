@@ -34,6 +34,7 @@ svm_model = pickle.load(open("model.sav", 'rb'))
 tfidf = pickle.load(open("tfidf.sav", 'rb'))
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('omw-1.4')
 # 3. Index route, opens automatically on http://127.0.0.1:8000
 @app.get('/')
 def index():
