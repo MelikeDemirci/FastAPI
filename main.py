@@ -28,7 +28,7 @@ from spellchecker import SpellChecker
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
-nltk.download('all')
+nltk.download('stopwords')
 
 # 2. Create the app object
 app = FastAPI()
